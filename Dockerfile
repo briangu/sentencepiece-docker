@@ -9,3 +9,4 @@ RUN cmake ..
 RUN make -j $(nproc)
 RUN make install
 RUN ldconfig -v
+WORKDIR /opt/sentencepiece/
